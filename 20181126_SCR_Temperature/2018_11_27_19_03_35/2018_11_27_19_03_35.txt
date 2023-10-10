@@ -1,0 +1,49 @@
+2018_11_27_19_03_35
+
+data_percentage = 0.92
+moving_avg_degr = 1
+dropout_percent = 0.1
+lstm_time_stamp = 300
+iterations_numr = 3
+
+Correlation between T_iSCR1 and ASMod_dmEGFld__INDEX_0
+[[1.         0.09079008]
+ [0.09079008 1.        ]]
+
+Correlation between T_iSCR1 and ActMod_trqClth
+[[1.        0.1045635]
+ [0.1045635 1.       ]]
+
+Correlation between T_iSCR1 and CEngDsT_t
+[[1.         0.64034024]
+ [0.64034024 1.        ]]
+
+Correlation between T_iSCR1 and CoEOM_numOpModeAct
+[[ 1.         -0.07301305]
+ [-0.07301305  1.        ]]
+
+Correlation between T_iSCR1 and EnvP_p
+[[ 1.         -0.10800335]
+ [-0.10800335  1.        ]]
+
+Correlation between T_iSCR1 and EnvT_t
+[[1.         0.03645309]
+ [0.03645309 1.        ]]
+
+Correlation between T_iSCR1 and Epm_nEng
+[[1.         0.09750135]
+ [0.09750135 1.        ]]
+
+Correlation between T_iSCR1 and VehV_v
+[[1.         0.28233177]
+ [0.28233177 1.        ]]
+
+trainX = dft.loc[1:train_size,['ASMod_dmEGFld__INDEX_0_Norm', 'ActMod_trqClth_Norm', 'CEngDsT_t_Norm','CoEOM_numOpModeAct_Norm', 'EnvP_p_Norm', 'EnvT_t_Norm', 'Epm_nEng_Norm','VehV_v_Norm']]
+trainY = dft.loc[1:train_size,['T_iSCR1_Norm']]
+
+testX1 = dft.loc[1:train_size,['ASMod_dmEGFld__INDEX_0_Norm', 'ActMod_trqClth_Norm', 'CEngDsT_t_Norm','CoEOM_numOpModeAct_Norm', 'EnvP_p_Norm', 'EnvT_t_Norm', 'Epm_nEng_Norm','VehV_v_Norm']]
+testY1 = dft.loc[1:train_size,['T_iSCR1_Norm']]
+testX2 = dft.loc[train_size:len(dft),['ASMod_dmEGFld__INDEX_0_Norm', 'ActMod_trqClth_Norm', 'CEngDsT_t_Norm','CoEOM_numOpModeAct_Norm', 'EnvP_p_Norm', 'EnvT_t_Norm', 'Epm_nEng_Norm','VehV_v_Norm']]
+testY2 = dft.loc[train_size:len(dft),['T_iSCR1_Norm']]
+
+Training Time : 183997.72090482712

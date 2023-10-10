@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "20181126_SCR_Temperature", "20181126_SCR_Temperature\20181126_SCR_Temperature.pyproj", "{903FD874-F0A5-4B97-97B4-F33C101C5FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903FD874-F0A5-4B97-97B4-F33C101C5FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903FD874-F0A5-4B97-97B4-F33C101C5FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {590492E6-55CB-45E1-9238-EA7AE820696E}
+	EndGlobalSection
+EndGlobal
